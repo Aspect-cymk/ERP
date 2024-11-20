@@ -3,8 +3,6 @@ from tkinter import filedialog
 from tkinter import font
 from tkinter import colorchooser
 import os, sys
-import win32print
-import win32api
 
 root = Tk()
 root.title('Codemy.com - TextPad!')
