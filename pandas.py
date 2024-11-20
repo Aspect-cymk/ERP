@@ -6,7 +6,6 @@ import os, sys
 
 root = Tk()
 root.title('Codemy.com - TextPad!')
-root.iconbitmap('c:/gui/codemy.ico')
 root.geometry("1200x710")
 
 
