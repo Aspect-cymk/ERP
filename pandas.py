@@ -5,7 +5,7 @@ from tkinter import colorchooser
 import os, sys
 
 root = Tk()
-root.title('Codemy.com - TextPad!')
+root.title('Mail Module')
 root.geometry("1200x710")
 
 
@@ -263,8 +263,6 @@ def night_off():
 	edit_menu.config(bg=main_color, fg=text_color)
 	color_menu.config(bg=main_color, fg=text_color)
 	options_menu.config(bg=main_color, fg=text_color)
-
-
 
 
 
