@@ -1,3 +1,4 @@
+
 import pickle
 import random
 import os
@@ -353,7 +354,7 @@ def sgn(): # SIGN UP MODULE
   while ans == "y":
     
     usr = input (" Enter your username :")
-    pss = input (" Enter a string password :")
+    pss = input (" Enter a password :")
     pss2 = input (" Enter your password again :")
     fcs = random.getrandbits(16)
     stu["username"] = usr
@@ -383,25 +384,31 @@ def lgn(): # LOGIN MODULE
       
               print(" \nBRANCHES OF YOUR COMPANY ")
               print(" 1. HPL(PVT.LTD) BANGALORE, HSR ")
+              print(" 2. HPL(PVT.LTD) BANGALORE, ELECRONIC CITY ")
+              print(" 3. HPL(PVT.LTD) BANGALORE, HEBAL ")
+              print(" 4. HPL(PVT.LTD) BANGALORE, WHITEFIELD ")
+              print(" 5. HPL(PVT.LTD) BANGALORE, KORMANGALA ")
+              print(" 6. HPL(PVT.LTD) BANGALORE, INDIRANAGAR ")
+
+              I = int(input(" Enter your  Branch ID: "))
               choice = int(input(" Enter your Branch: "))
-              ID = int(input(" Enter your  Branch ID: "))
-      
-              if ID == fcs:
-        
+              
+              if I == stu["Branch ID"]:
+            
                 if choice == 1:
                     print(" You have successfully logged in to HPL(PVT.LTD) BANGALORE, HSR ")                           
           
                     ans = "y"
                     while ans == "y":
                         print("""   
-   _______  ___     ___  ___  ____  __________  ________  _____  ____  ___
-  / __/ _ \/ _ \   / _ \/ _ \/ __ \/_  __/ __ \/_  __/\ \/ / _ \/ __/ <  /
- / _// , _/ ___/  / ___/ , _/ /_/ / / / / /_/ / / /    \  / ___/ _/   / / 
-/___/_/|_/_/     /_/  /_/|_|\____/ /_/  \____/ /_/     /_/_/  /___/  /_/  
-            __  ______   _____  __   __  ________  ____  __               
-           /  |/  / _ | /  _/ |/ /  /  |/  / __/ |/ / / / /               
-          / /|_/ / __ |_/ //    /  / /|_/ / _//    / /_/ /                
-         /_/  /_/_/ |_/___/_/|_/  /_/  /_/___/_/|_/\____/                 
+   _______  ___     ___  ___  ____  __________  ________  _____  ____   
+  / __/ _ \/ _ \   / _ \/ _ \/ __ \/_  __/ __ \/_  __/\ \/ / _ \/ __/  
+ / _// , _/ ___/  / ___/ , _/ /_/ / / / / /_/ / / /    \  / ___/ _/     
+/___/_/|_/_/     /_/  /_/|_|\____/ /_/  \____/ /_/     /_/_/  /___/     
+           __  ______   _____  __    __  ________  ____  __               
+          /  |/  / _ | /  _/ |/ /   /  |/  / __/ |/ / / / /               
+         / /|_/ / __ |_/ //    /   / /|_/ / _//    / /_/ /                
+        /_/  /_/_/ |_/___/_/|_/   /_/  /_/___/_/|_/\____/                 
                                                                          """)
                         print("1. EXCHANGE RATES MODULE")
                         print("4. CUSTOMERS MODULE")
@@ -431,6 +438,8 @@ def lgn(): # LOGIN MODULE
         if found == False:
             print("Wrong credentials entered! Try again.")
     file.close()
+
+
 while True:
     print ("\nMENU")
     print ("""1. sign up. """)
@@ -452,36 +461,3 @@ while True:
         print("Incorrect choice!!!")
 
 #=================================================================== MODULES =================================================================================================#
-
-# BHUVESH GETS INTO A KALESH WITH MUKESH
-.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
